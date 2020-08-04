@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="contact.xsl" ?>
+<student>
+<s>
+<branch> Malad </branch>
+<city> Mumbai </city>
+<phone> 9892342200 </phone>
+<email> cus-servicemalad@gmail.com </email>
+</s>
+<s>
+<branch> Kandivli </branch>
+<city> Mumbai </city>
+<phone> 9892342210 </phone>
+<email> cus-servicekand@gmail.com </email>
+</s>
+<s>
+<branch> New-delhi </branch>
+<city> delhi </city>
+<phone> 9664555023 </phone>
+<email> cus-servicedel@gmail.com </email>
+</s>
+<s>
+<branch> Shahjahanpur </branch>
+<city> madhya-pradesh </city>
+<phone> 9664545023 </phone>
+<email> cus-serviceshah@gmail.com </email>
+</s>
+<s>
+<branch> Indore </branch>
+<city> Uttar-pradesh </city>
+<phone> 9764545023 </phone>
+<email> cus-serviceuttar@gmail.com </email>
+</s>
+</student>

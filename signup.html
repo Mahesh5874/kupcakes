@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<script type="text/javascript">
+		function validateForm() {
+                    var fname = document.forms["myForm"]["fname"].value;
+                    var lname = document.forms["myForm"]["lname"].value;
+                    var emailid= document.forms["myForm"]["emailid"].value;
+                    var pass = document.forms["myForm"]["pass"].value;
+                    var confpass= document.forms["myForm"]["confpass"].value;
+                    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                    if (fname == "") {
+                        alert("Name field cannot be empty");
+                        return false;
+                    }
+                    if (lname == "") {
+                        alert("Name field cannot be empty");
+                        return false;
+                    }
+                    if (emailid == "") {
+                        alert("Email id required");
+                        return false;
+                    }
+                    if(reg.test(emailid) == false){
+                      alert("Email id Invalid");
+                      return false;
+                    }
+
+                    if (pass == "") {
+                        alert("Password required");
+                        return false;
+                    }
+                    else if (pass.length < 8) {
+                      alert("Password of 8 or more than 8 characters required");
+                      return false;
+
+                    }
+                    if (confpass == "") {
+                        alert("Please re-enter password");
+                        return false;
+                    }
+                    if (pass != confpass){
+                      alert("Passwords do not match");
+                      return false;
+                    }
+                }
+	</script>
+</head>
+<body>
+	<div class="contact-section3">
+	      <div class="inner-width3">
+	        <h1>Join us</h1>
+	        <form name="myForm" action ="register.php" onsubmit="return validateForm()" method="post">
+	        <input type="text" class="fname" name="fname" placeholder="Your Firstname">
+	        <input type="text" class="lname" name="lname" placeholder="Your Lastname">
+	        <input type="email" class="email" name="emailid" placeholder="Your Email Address"><br>
+	        <input type="password" class="password" name="pass" placeholder="Your Password"><br>
+	        <input type="password" name="confpass" class="password" placeholder="Confirm password"><br>
+	        <input type="Submit" name="" value="Register" class="button"><br>
+	        <div class="options">
+	        <a href="">Already have an account</a>
+	        </form>    
+	        </div>
+	      </div>
+	</div>
+</body>
+</html>
